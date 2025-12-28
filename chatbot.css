@@ -1,0 +1,433 @@
+/* ======================================
+   Global Styles & Reset
+   ====================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #282c34;
+    color: #ffffff;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* ======================================
+   Navbar with Logo
+   ====================================== */
+.navbar {
+    width: 100%;
+    background-color: #000000;
+    padding: 20px 30px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    min-height: 70px;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.navbar i {
+    color: whitesmoke;
+    font-size: 32px;
+}
+
+.fcf-logo {
+    max-height: 50px;
+    height: auto;
+}
+
+.navbar h1 {
+    margin: 0;
+    color: whitesmoke;
+    font-size: 24px;
+    font-weight: 600;
+}
+/* ======================================
+   Top Avatar Container
+   ====================================== */
+.top-avatar-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.top-avatar {
+    width: 200px;
+    height: 250px;
+    margin-right: 10px;
+    flex-shrink: 0;
+    border-radius: 50%;
+
+}
+
+
+
+
+/* ======================================
+   Chat Container
+   ====================================== */
+.container {
+    width: 100%;
+    max-width: 800px;
+    height: 80vh;
+    background-color: #3b4049;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-top: 90px;
+    margin-bottom: 20px;
+}
+
+/* ======================================
+   Chat Box
+   ====================================== */
+.chat-box {
+    flex: 1;
+    padding: 16px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #2e3238;
+    scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+.chat-box::-webkit-scrollbar {
+    width: 8px;
+}
+
+.chat-box::-webkit-scrollbar-track {
+    background: #1f2428;
+    border-radius: 10px;
+}
+
+.chat-box::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 10px;
+}
+
+.chat-box::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* ======================================
+   Messages
+   ====================================== */
+.message {
+    margin-bottom: 15px;
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.message.bot {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.bot-avatar {
+    width: 200px;
+    height: 250px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    margin-top: 5px;
+}
+
+.bot-message-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 70%;
+}
+
+.bot-message-content p {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 14px 18px;
+    border-radius: 18px 18px 18px 4px;
+    margin: 0;
+    color: #ffffff;
+    line-height: 1.5;
+    font-size: 14px;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+.bot-message-content p::before {
+    content: '';
+    position: absolute;
+    left: -12px;
+    top: 10px;
+    width: 0;
+    height: 0;
+    border-right: 12px solid #764ba2;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+}
+
+/* ======================================
+   Options Container
+   ====================================== */
+.options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: fit-content;
+}
+
+/* ======================================
+   Option Buttons
+   ====================================== */
+.option-btn {
+    background: #4caf50;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.option-btn::before {
+    content: '→';
+    position: absolute;
+    right: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease, right 0.3s ease;
+}
+
+.option-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(76, 175, 80, 0.4);
+    background: #45a049;
+}
+
+.option-btn:hover::before {
+    opacity: 1;
+    right: 15px;
+}
+
+.option-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* ======================================
+   Input Box & Clear Chat Button
+   ====================================== */
+.input-box {
+    display: flex;
+    border-top: 1px solid #444;
+    padding: 10px;
+    background-color: #3b4049;
+    position: sticky;
+    bottom: 0;
+}
+
+.clear-chat-btn {
+    background-color: #282c34;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+}
+
+.clear-chat-btn i {
+    transition: transform 0.3s ease;
+}
+
+.clear-chat-btn:hover {
+    background-color: #1f2428;
+}
+
+.clear-chat-btn:hover i {
+    transform: rotate(180deg);
+}
+
+.clear-chat-btn:active {
+    background: #1a1d21;
+}
+
+/* ======================================
+   User Selected Option Display
+   ====================================== */
+.user-message {
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+.user-message-content {
+    background: #4caf50;
+    color: #ffffff;
+    padding: 10px 16px;
+    border-radius: 20px;
+    border-bottom-right-radius: 0;
+    display: inline-block;
+    max-width: 70%;
+    word-wrap: break-word;
+    font-size: 14px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* ======================================
+   Responsive Design
+   ====================================== */
+@media (max-width: 768px) {
+    .container {
+        max-width: 95%;
+        height: 85vh;
+        border-radius: 8px;
+    }
+
+    .navbar {
+        padding: 15px 20px;
+        min-height: 60px;
+    }
+
+    .fcf-logo {
+        max-height: 40px;
+    }
+
+    .navbar i {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 380px) {
+    .container {
+        max-width: 100%;
+        height: 90vh;
+        border-radius: 0;
+    }
+
+    .chat-box {
+        padding: 12px;
+    }
+
+    .option-btn {
+        font-size: 13px;
+        padding: 10px 16px;
+    }
+
+    .navbar {
+        padding: 12px 15px;
+        min-height: 55px;
+    }
+
+    .fcf-logo {
+        max-height: 35px;
+    }
+
+    .navbar h1 {
+        font-size: 18px;
+    }
+
+    .navbar i {
+        font-size: 24px;
+    }
+}
+
+/* ======================================
+   Accessibility
+   ====================================== */
+.option-btn:focus,
+.clear-chat-btn:focus {
+    outline: 3px solid #4caf50;
+    outline-offset: 2px;
+}
+
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+/* Product Image Styling */
+.bot-image-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.product-image {
+  width: 48%;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.product-image:hover {
+  transform: scale(1.05);
+}
+ 
+.product-block {
+  background: rgba(255,255,255,0.05);
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.product-block h4 {
+  color: #ffd369;
+  margin-bottom: 5px;
+}
+
+.product-block p {
+  font-size: 14px;
+  color: #eee;
+}
+
+.product-price {
+  font-weight: bold;
+  color: #7ef57e;
+  margin-top: 5px;
+}
