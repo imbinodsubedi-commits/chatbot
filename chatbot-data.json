@@ -47,13 +47,13 @@
       {
         "title": "🍟 Himalayan Crisp",
         "description": "Premium frozen fries crafted for perfect crunch and authentic taste.",
-        "images": ["/images/himalayan1.png", "/images/himalayan2.png"],
+        "images": ["/himalayan1.png", "/himalayan2.png"],
         "price": "1 KG – Rs. XXX | 2.5 KG – Rs. XXX"
       },
       {
         "title": "🍟 Hamro Fries",
         "description": "Our signature fries — crisp, golden, and made from the finest Nepali potatoes.",
-        "images": ["/images/hamro1.png", "/images/hamro2.png"],
+        "images": ["/hamro1.png", "/hamro2.png"],
         "price": "1 KG – Rs. XXX | 2.5 KG – Rs. XXX"
       }
     ],
@@ -66,13 +66,13 @@
       {
         "title": "🍟 Himalayan Crisp",
         "description": "प्रीमियम फ्रोजन फ्राइज — उत्तम कुरकुरापन र मौलिक स्वादको लागि तयार।",
-        "images": ["/images/himalayan1.png", "/images/himalayan2.png"],
+        "images": ["/himalayan1.png", "/himalayan2.png"],
         "price": "१ किलो – रु XXX  | २.५ किलो – रु XXX"
       },
       {
         "title": "🍟 Hamro Fries",
         "description": "हाम्रो सिग्नेचर फ्राइज — कुरकुरा, सुनौलो र उत्कृष्ट नेपाली आलुबाट बनेको।",
-        "images": ["/images/hamro1.png", "/images/hamro2.png"],
+        "images": ["/hamro1.png", "/hamro2.png"],
         "price": "१ किलो – रु XXX | २.५ किलो – रु XXX"
       }
     ],
