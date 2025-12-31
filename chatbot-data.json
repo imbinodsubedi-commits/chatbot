@@ -12,7 +12,6 @@
       { "label": "What is First Choice Foods?", "next": "intro_en" },
       { "label": "Our Products", "next": "product_info_en" },
       { "label": "Sales Information", "next": "sales_en" },
-      { "label": "Land Usage", "next": "land_usage_en" },
       { "label": "Job Opportunities", "next": "jobs_en" },
       { "label": "Other Queries", "next": "other_en" }
     ]
@@ -23,32 +22,46 @@
     "options": [{ "label": "⬅ Go Back", "next": "greeting_en" }]
   },
 
- "product_info_en": {
-  "message": "Here are our main products available in different pack sizes and cut varieties 👇",
-  "products": [
-    {
-      "title": "🍟 Himalayan Crisp",
-      "description": "Premium frozen fries crafted for perfect crunch and authentic taste. Available in three varieties:",
-      "images": [
-        "https://imbinodsubedi-commits.github.io/chatbot/himalayan1.png",
-        "https://imbinodsubedi-commits.github.io/chatbot/himalayan2.png",
-        "https://imbinodsubedi-commits.github.io/chatbot/himalayan6.png"
-      ],
-      "price": "1KG 9mm Straight Cut – Rs. XXX | 2.5KG 9mm Straight Cut – Rs. XXX | 2.5KG 6mm Straight Cut – Rs. XXX"
-    },
-    {
-      "title": "🍟 Hamro Fries",
-      "description": "Our signature fries — crisp, golden, and made from the finest Nepali potatoes. Available in 1KG and 2.5KG packs.",
-      "images": [
-        "https://imbinodsubedi-commits.github.io/chatbot/hamro1.png",
-        "https://imbinodsubedi-commits.github.io/chatbot/hamro2.png"
-      ],
-      "price": "1KG – Rs. XXX | 2.5KG – Rs. XXX"
-    }
-  ],
-  "options": [{ "label": "⬅ Go Back", "next": "greeting_en" }]
-},
-
+  "product_info_en": {
+    "message": "Here are our main products available in different pack sizes and cut varieties 👇",
+    "products": [
+      {
+        "title": "🍟 Himalayan Crisp",
+        "description": "Premium frozen fries crafted for perfect crunch and authentic taste. Available in three varieties:",
+        "images": [
+          {
+            "src": "https://imbinodsubedi-commits.github.io/chatbot/himalayan1.png",
+            "caption": "1KG – 9mm Straight Cut"
+          },
+          {
+            "src": "https://imbinodsubedi-commits.github.io/chatbot/himalayan2.png",
+            "caption": "2.5KG – 9mm Straight Cut"
+          },
+          {
+            "src": "https://imbinodsubedi-commits.github.io/chatbot/himalayan6.png",
+            "caption": "2.5KG – 6mm Straight Cut"
+          }
+        ],
+        "price": "1KG 9mm Straight Cut – Rs. XXX | 2.5KG 9mm Straight Cut – Rs. XXX | 2.5KG 6mm Straight Cut – Rs. XXX"
+      },
+      {
+        "title": "🍟 Hamro Fries",
+        "description": "Our signature fries — crisp, golden, and made from the finest Nepali potatoes. Available in 1KG and 2.5KG packs.",
+        "images": [
+          {
+            "src": "https://imbinodsubedi-commits.github.io/chatbot/hamro1.png",
+            "caption": "1KG Pack"
+          },
+          {
+            "src": "https://imbinodsubedi-commits.github.io/chatbot/hamro2.png",
+            "caption": "2.5KG Pack"
+          }
+        ],
+        "price": "1KG – Rs. XXX | 2.5KG – Rs. XXX"
+      }
+    ],
+    "options": [{ "label": "⬅ Go Back", "next": "greeting_en" }]
+  },
 
   "sales_en": {
     "message": "Please select your sales type:",
@@ -74,7 +87,6 @@
     "message": "Our products are available in major stores like <b>Bhatbhateni Supermarket</b>. You can check them out there!",
     "options": [{ "label": "⬅ Go Back", "next": "sales_en" }]
   },
-
 
   "jobs_en": {
     "message": "Interested in joining the FCF Foods family? 💼<br><br>We’re always looking for passionate and skilled individuals to be part of our growing team.<br><br>👉 <a href='https://fcffoods.com/careers/' target='_blank' style='color:#ffd700;'>Visit our Careers Page</a> to view current openings and apply online.<br><br>For any HR-related queries, you can also email us at:<br>📧 <a href='mailto:hr@fcffoods.com' style='color:#ffd700;'>hr@fcffoods.com</a>",

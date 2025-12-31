@@ -71,7 +71,7 @@ function displayMessage(stateData) {
   const botMessageContent = document.createElement('div');
   botMessageContent.className = 'bot-message-content';
 
-  // Bot message (now supports \n and HTML)
+  // Bot message (supports HTML and line breaks)
   const messagePara = document.createElement('p');
   messagePara.innerHTML = stateData.message.replace(/\n/g, "<br>");
   botMessageContent.appendChild(messagePara);
@@ -90,19 +90,33 @@ function displayMessage(stateData) {
       desc.textContent = product.description;
       productBlock.appendChild(desc);
 
+      // === Image and caption handling ===
       if (product.images && Array.isArray(product.images)) {
         const imgContainer = document.createElement('div');
         imgContainer.className = 'bot-image-container';
-        product.images.forEach(imgSrc => {
+
+        product.images.forEach(imgData => {
+          const imgWrapper = document.createElement('div');
+          imgWrapper.className = 'image-with-caption';
+
           const img = document.createElement('img');
-          img.src = imgSrc;
-          img.alt = product.title;
+          img.src = imgData.src || imgData;
+          img.alt = imgData.caption || product.title;
           img.className = 'product-image';
-          imgContainer.appendChild(img);
+
+          const caption = document.createElement('p');
+          caption.className = 'image-caption';
+          caption.textContent = imgData.caption || '';
+
+          imgWrapper.appendChild(img);
+          imgWrapper.appendChild(caption);
+          imgContainer.appendChild(imgWrapper);
         });
+
         productBlock.appendChild(imgContainer);
       }
 
+      // === Price display ===
       const price = document.createElement('p');
       price.className = 'product-price';
       price.textContent = product.price;
