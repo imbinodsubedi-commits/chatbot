@@ -31,18 +31,18 @@
         "images": [
           {
             "src": "https://imbinodsubedi-commits.github.io/chatbot/himalayan1.png",
-            "caption": "1KG – 9mm Straight Cut"
+            "caption": "1KG – 9mm Straight Cut (MRP Rs. 350)"
           },
           {
             "src": "https://imbinodsubedi-commits.github.io/chatbot/himalayan2.png",
-            "caption": "2.5KG – 9mm Straight Cut"
+            "caption": "2.5KG – 9mm Straight Cut (MRP Rs. 780)"
           },
           {
             "src": "https://imbinodsubedi-commits.github.io/chatbot/himalayan6.png",
-            "caption": "2.5KG – 6mm Straight Cut"
+            "caption": "2.5KG – 6mm Straight Cut (MRP Rs. 850)"
           }
         ],
-        "price": "1KG 9mm Straight Cut – Rs. XXX | 2.5KG 9mm Straight Cut – Rs. XXX | 2.5KG 6mm Straight Cut – Rs. XXX"
+        "price": "MRP: 1KG – Rs. 350 | 2.5KG (9mm) – Rs. 780 | 2.5KG (6mm) – Rs. 850"
       },
       {
         "title": "🍟 Hamro Fries",
@@ -50,14 +50,14 @@
         "images": [
           {
             "src": "https://imbinodsubedi-commits.github.io/chatbot/hamro1.png",
-            "caption": "1KG Pack"
+            "caption": "1KG Pack (MRP Rs. 300)"
           },
           {
             "src": "https://imbinodsubedi-commits.github.io/chatbot/hamro2.png",
-            "caption": "2.5KG Pack"
+            "caption": "2.5KG Pack (MRP Rs. 680)"
           }
         ],
-        "price": "1KG – Rs. XXX | 2.5KG – Rs. XXX"
+        "price": "MRP: 1KG – Rs. 300 | 2.5KG – Rs. 680"
       }
     ],
     "options": [{ "label": "⬅ Go Back", "next": "greeting_en" }]
@@ -86,6 +86,11 @@
   "futkar_en": {
     "message": "Our products are available in major stores like <b>Bhatbhateni Supermarket</b>. You can check them out there!",
     "options": [{ "label": "⬅ Go Back", "next": "sales_en" }]
+  },
+
+  "land_usage_en": {
+    "message": "We are currently not looking for any land or property usage opportunities.<br><br>If this changes in the future, we’ll share updates here. Thank you for your interest!",
+    "options": [{ "label": "⬅ Go Back", "next": "greeting_en" }]
   },
 
   "jobs_en": {
