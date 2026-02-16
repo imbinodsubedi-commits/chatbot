@@ -2,7 +2,9 @@
   "language_select": {
     "message": "Hi 👋 How can I help you?",
     "options": [
-      { "label": "English", "next": "greeting_en" }
+      { "label": "English", "next": "greeting_en" },
+      { "label": "नेपाली", "next": "greeting_np" },
+      { "label": "Русский", "next": "greeting_ru" }
     ]
   },
 
@@ -17,9 +19,40 @@
     ]
   },
 
+  "greeting_np": {
+    "message": "FCF Buddy मा स्वागत छ! म तपाईंलाई कसरी सहयोग गर्न सक्छु?",
+    "options": [
+      { "label": "First Choice Foods के हो?", "next": "intro_np" },
+      { "label": "हाम्रा उत्पादनहरू", "next": "product_info_np" },
+      { "label": "बिक्री जानकारी", "next": "sales_np" },
+      { "label": "रोजगारी अवसर", "next": "jobs_np" },
+      { "label": "अन्य जानकारी", "next": "other_np" }
+    ]
+  },
+
+  "greeting_ru": {
+    "message": "Добро пожаловать в FCF Buddy! Чем я могу вам помочь сегодня?",
+    "options": [
+      { "label": "Что такое First Choice Foods?", "next": "intro_ru" },
+      { "label": "Наша продукция", "next": "product_info_ru" },
+      { "label": "Информация о продажах", "next": "sales_ru" },
+      { "label": "Другие вопросы", "next": "other_ru" }
+    ]
+  },
+
   "intro_en": {
     "message": "First Choice Foods Limited is a newly established Nepalese industry specializing in premium French fries and other frozen potato products.<br><br>We bring international quality with a Nepali touch — fresh, crispy, and full of flavor!",
     "options": [{ "label": "⬅ Go Back", "next": "greeting_en" }]
+  },
+
+  "intro_np": {
+    "message": "First Choice Foods Limited नयाँ स्थापित नेपाली उद्योग हो जसले उत्कृष्ट फ्रेन्च फ्राइज र अन्य फ्रोजन आलुजन्य उत्पादनहरू उत्पादन गर्छ।<br><br>हामीले अन्तर्राष्ट्रिय गुणस्तर र नेपाली स्वादलाई एकसाथ ल्याएका छौं — ताजा, कुरकुरा र स्वादिलो!",
+    "options": [{ "label": "⬅ फर्कनुहोस्", "next": "greeting_np" }]
+  },
+
+  "intro_ru": {
+    "message": "First Choice Foods Limited — это новое непальское предприятие, специализирующееся на производстве картофеля фри премиум-класса и других замороженных продуктов из картофеля.<br><br>Мы предлагаем международное качество с непальским колоритом — свежие, хрустящие и полные вкуса!",
+    "options": [{ "label": "⬅ Назад", "next": "greeting_ru" }]
   },
 
   "product_info_en": {
@@ -63,6 +96,88 @@
     "options": [{ "label": "⬅ Go Back", "next": "greeting_en" }]
   },
 
+  "product_info_np": {
+    "message": "विभिन्न प्याक साइज र कट भेराइटीमा उपलब्ध हाम्रा मुख्य उत्पादनहरू यहाँ छन् 👇",
+    "products": [
+      {
+        "title": "🍟 Himalayan Crisp",
+        "description": "प्रीमियम फ्रोजन फ्राइज — उत्तम कुरकुरापन र मौलिक स्वादको लागि तयार। तीन प्रकारमा उपलब्ध:",
+        "images": [
+          {
+            "src": "https://imbinodsubedi-commits.github.io/chatbot/himalayan1.png",
+            "caption": "१ किलो – ९ एमएम स्ट्रेट कट (मूल्य रु ३५०)"
+          },
+          {
+            "src": "https://imbinodsubedi-commits.github.io/chatbot/himalayan2.png",
+            "caption": "२.५ किलो – ९ एमएम स्ट्रेट कट (मूल्य रु ७८०)"
+          },
+          {
+            "src": "https://imbinodsubedi-commits.github.io/chatbot/himalayan6.png",
+            "caption": "२.५ किलो – ६ एमएम स्ट्रेट कट (मूल्य रु ८५०)"
+          }
+        ],
+        "price": "मूल्य: १ किलो – रु ३५० | २.५ किलो (९ एमएम) – रु ७८० | २.५ किलो (६ एमएम) – रु ८५०"
+      },
+      {
+        "title": "🍟 Hamro Fries",
+        "description": "हाम्रो सिग्नेचर फ्राइज — कुरकुरा, सुनौलो र उत्कृष्ट नेपाली आलुबाट बनेको। १ किलो र २.५ किलो प्याकमा उपलब्ध।",
+        "images": [
+          {
+            "src": "https://imbinodsubedi-commits.github.io/chatbot/hamro1.png",
+            "caption": "१ किलो प्याक (मूल्य रु ३००)"
+          },
+          {
+            "src": "https://imbinodsubedi-commits.github.io/chatbot/hamro2.png",
+            "caption": "२.५ किलो प्याक (मूल्य रु ६८०)"
+          }
+        ],
+        "price": "मूल्य: १ किलो – रु ३०० | २.५ किलो – रु ६८०"
+      }
+    ],
+    "options": [{ "label": "⬅ फर्कनुहोस्", "next": "greeting_np" }]
+  },
+
+  "product_info_ru": {
+    "message": "Вот наши основные продукты, доступные в различных упаковках и видах нарезки 👇",
+    "products": [
+      {
+        "title": "🍟 Himalayan Crisp",
+        "description": "Замороженный картофель фри премиум-класса для идеального хруста. Доступен в трех вариантах:",
+        "images": [
+          {
+            "src": "https://imbinodsubedi-commits.github.io/chatbot/himalayan1.png",
+            "caption": "1 кг – Прямая нарезка 9 мм"
+          },
+          {
+            "src": "https://imbinodsubedi-commits.github.io/chatbot/himalayan2.png",
+            "caption": "2,5 кг – Прямая нарезка 9 мм"
+          },
+          {
+            "src": "https://imbinodsubedi-commits.github.io/chatbot/himalayan6.png",
+            "caption": "2,5 кг – Прямая нарезка 6 мм"
+          }
+        ],
+        "price": ""
+      },
+      {
+        "title": "🍟 Hamro Fries",
+        "description": "Наш фирменный картофель фри — хрустящий, золотистый, из лучшего непальского картофеля. В упаковках по 1 кг и 2,5 кг.",
+        "images": [
+          {
+            "src": "https://imbinodsubedi-commits.github.io/chatbot/hamro1.png",
+            "caption": "Упаковка 1 кг"
+          },
+          {
+            "src": "https://imbinodsubedi-commits.github.io/chatbot/hamro2.png",
+            "caption": "Упаковка 2,5 кг"
+          }
+        ],
+        "price": ""
+      }
+    ],
+    "options": [{ "label": "⬅ Назад", "next": "greeting_ru" }]
+  },
+
   "sales_en": {
     "message": "Please select your sales type:",
     "options": [
@@ -73,9 +188,37 @@
     ]
   },
 
+  "sales_np": {
+    "message": "कृपया बिक्रीको प्रकार चयन गर्नुहोस्:",
+    "options": [
+      { "label": "बल्क अर्डर (थोक)", "next": "bulk_np" },
+      { "label": "फुटकर (खुद्रा)", "next": "futkar_np" },
+      { "label": "अन्तर्राष्ट्रिय बिक्री 🌎", "next": "intl_sales_np" },
+      { "label": "⬅ फर्कनुहोस्", "next": "greeting_np" }
+    ]
+  },
+
+  "sales_ru": {
+    "message": "Пожалуйста, выберите тип продажи:",
+    "options": [
+      { "label": "Международные продажи 🌎", "next": "intl_sales_ru" },
+      { "label": "⬅ Назад", "next": "greeting_ru" }
+    ]
+  },
+
   "intl_sales_en": {
     "message": "For international sales or export-related inquiries, please contact:<br><br>📧 <a href='mailto:laxmipaudel@fcffoods.com' style='color:#ffd700;'>laxmipaudel@fcffoods.com</a>",
     "options": [{ "label": "⬅ Go Back", "next": "sales_en" }]
+  },
+
+  "intl_sales_np": {
+    "message": "अन्तर्राष्ट्रिय बिक्री वा निर्यात सम्बन्धी जानकारीका लागि कृपया सम्पर्क गर्नुहोस्:<br><br>📧 <a href='mailto:laxmipaudel@fcffoods.com' style='color:#ffd700;'>laxmipaudel@fcffoods.com</a>",
+    "options": [{ "label": "⬅ फर्कनुहोस्", "next": "sales_np" }]
+  },
+
+  "intl_sales_ru": {
+    "message": "По вопросам международных продаж или экспорта обращайтесь:<br><br>📧 <a href='mailto:globalsales@fcffoods.com' style='color:#ffd700;'>globalsales@fcffoods.com</a>",
+    "options": [{ "label": "⬅ Назад", "next": "sales_ru" }]
   },
 
   "bulk_en": {
@@ -83,9 +226,19 @@
     "options": [{ "label": "⬅ Go Back", "next": "sales_en" }]
   },
 
+  "bulk_np": {
+    "message": "बल्क अर्डरको लागि कृपया हाम्रो बिक्री टिमलाई सिधा सम्पर्क गर्नुहोस्:<br>📞 <a href='tel:+9779802847524' style='color:#ffd700;'>+9779802847524</a>",
+    "options": [{ "label": "⬅ फर्कनुहोस्", "next": "sales_np" }]
+  },
+
   "futkar_en": {
     "message": "Our products are available in major stores like <b>Bhatbhateni Supermarket</b>. You can check them out there!",
     "options": [{ "label": "⬅ Go Back", "next": "sales_en" }]
+  },
+
+  "futkar_np": {
+    "message": "हाम्रा उत्पादनहरू <b>भाटभटेनी सुपरमार्केट</b> लगायतका ठूला पसलहरूमा उपलब्ध छन्। तपाईंले त्यहाँ हेर्न सक्नुहुन्छ!",
+    "options": [{ "label": "⬅ फर्कनुहोस्", "next": "sales_np" }]
   },
 
   "land_usage_en": {
@@ -93,13 +246,38 @@
     "options": [{ "label": "⬅ Go Back", "next": "greeting_en" }]
   },
 
+  "land_usage_np": {
+    "message": "हामी अहिले कुनै पनि जग्गा वा सम्पत्ति प्रयोग सम्बन्धी अवसरहरू खोजिरहेका छैनौं।<br><br>यदि भविष्यमा यसमा परिवर्तन भयो भने, हामी यहाँ जानकारी दिनेछौं। तपाईंको चासोको लागि धन्यवाद!",
+    "options": [{ "label": "⬅ फर्कनुहोस्", "next": "greeting_np" }]
+  },
+
+  "land_usage_ru": {
+    "message": "В настоящее время мы не ищем возможности использования земли или недвижимости.<br><br>Если ситуация изменится в будущем, мы сообщим об этом здесь. Спасибо за ваш интерес!",
+    "options": [{ "label": "⬅ Назад", "next": "greeting_ru" }]
+  },
+
   "jobs_en": {
     "message": "Interested in joining the FCF Foods family? 💼<br><br>We’re always looking for passionate and skilled individuals to be part of our growing team.<br><br>👉 <a href='https://fcffoods.com/careers/' target='_blank' style='color:#ffd700;'>Visit our Careers Page</a> to view current openings and apply online.<br><br>For any HR-related queries, you can also email us at:<br>📧 <a href='mailto:hr@fcffoods.com' style='color:#ffd700;'>hr@fcffoods.com</a>",
     "options": [{ "label": "⬅ Go Back", "next": "greeting_en" }]
   },
 
+  "jobs_np": {
+    "message": "FCF Foods परिवारमा सामेल हुन चाहनुहुन्छ? 💼<br><br>हामी सधैं उत्साही र दक्ष व्यक्तिहरूलाई हाम्रो बढ्दो टिममा स्वागत गर्न इच्छुक छौं।<br><br>👉 <a href='https://fcffoods.com/careers/' target='_blank' style='color:#ffd700;'>हाम्रो Careers पृष्ठ</a> हेरी हालका अवसरहरू र आवेदन विवरणहरू हेर्नुहोस्।<br><br>मानव संसाधन (HR) सम्बन्धी सोधपुछका लागि:<br>📧 <a href='mailto:hr@fcffoods.com' style='color:#ffd700;'>hr@fcffoods.com</a>",
+    "options": [{ "label": "⬅ फर्कनुहोस्", "next": "greeting_np" }]
+  },
+
   "other_en": {
     "message": "If you need any assistance, have a question, or wish to connect with our team, please contact us through the details below:<br><br>📱 <b>Mobile:</b> <a href='tel:+9779802847504' style='color:#ffd700;'>+977 9802847504</a><br>☎️ <b>Telephone:</b> <a href='tel:+97715921116' style='color:#ffd700;'>+977 15921116</a><br><br>❓ <b>Need help or have a question?</b><br>✉️ <b>General Inquiries:</b> <a href='mailto:info@fcffoods.com' style='color:#ffd700;'>info@fcffoods.com</a>",
     "options": [{ "label": "⬅ Go Back", "next": "greeting_en" }]
+  },
+
+  "other_np": {
+    "message": "यदि तपाईंलाई कुनै सहयोग आवश्यक छ वा कुनै प्रश्न छ भने कृपया तलका सम्पर्क माध्यमहरू प्रयोग गर्नुहोस्:<br><br>📱 <b>मोबाइल:</b> <a href='tel:+9779802847504' style='color:#ffd700;'>+9779802847504</a><br>☎️ <b>टेलिफोन:</b> <a href='tel:+97715921116' style='color:#ffd700;'>+97715921116</a><br><br>❓ <b>सामान्य सोधपुछ वा सहयोगका लागि:</b><br>✉️ <b>इमेल:</b> <a href='mailto:info@fcffoods.com' style='color:#ffd700;'>info@fcffoods.com</a>",
+    "options": [{ "label": "⬅ फर्कनुहोस्", "next": "greeting_np" }]
+  },
+
+  "other_ru": {
+    "message": "Если вам нужна помощь, у вас есть вопрос или вы хотите связаться с нашей командой, используйте контактные данные ниже:<br><br>❓ <b>Нужна помощь или есть вопрос?</b><br>✉️ <b>Общие вопросы:</b> <a href='mailto:info@fcffoods.com' style='color:#ffd700;'>info@fcffoods.com</a>",
+    "options": [{ "label": "⬅ Назад", "next": "greeting_ru" }]
   }
 }
