@@ -64,18 +64,18 @@
         "images": [
           {
             "src": "https://imbinodsubedi-commits.github.io/chatbot/himalayan1.png",
-            "caption": "1KG – 9mm Straight Cut (MRP Rs. 350)"
+            "caption": "1KG – 9mm Straight Cut (MRP Rs. 385)"
           },
           {
             "src": "https://imbinodsubedi-commits.github.io/chatbot/himalayan2.png",
-            "caption": "2.5KG – 9mm Straight Cut (MRP Rs. 780)"
+            "caption": "2.5KG – 9mm Straight Cut (MRP Rs. 880)"
           },
           {
             "src": "https://imbinodsubedi-commits.github.io/chatbot/himalayan6.png",
-            "caption": "2.5KG – 6mm Straight Cut (MRP Rs. 850)"
+            "caption": "2.5KG – 6mm Straight Cut (MRP Rs. 1000)"
           }
         ],
-        "price": "MRP: 1KG – Rs. 350 | 2.5KG (9mm) – Rs. 780 | 2.5KG (6mm) – Rs. 850"
+        "price": "MRP: 1KG – Rs. 385 | 2.5KG (9mm) – Rs. 880 | 2.5KG (6mm) – Rs. 1000"
       },
       {
         "title": "🍟 Hamro Fries",
@@ -83,14 +83,14 @@
         "images": [
           {
             "src": "https://imbinodsubedi-commits.github.io/chatbot/hamro1.png",
-            "caption": "1KG Pack (MRP Rs. 300)"
+            "caption": "1KG Pack (MRP Rs. 350)"
           },
           {
             "src": "https://imbinodsubedi-commits.github.io/chatbot/hamro2.png",
-            "caption": "2.5KG Pack (MRP Rs. 680)"
+            "caption": "2.5KG Pack (MRP Rs. 780)"
           }
         ],
-        "price": "MRP: 1KG – Rs. 300 | 2.5KG – Rs. 680"
+        "price": "MRP: 1KG – Rs. 350 | 2.5KG – Rs. 780"
       }
     ],
     "options": [{ "label": "⬅ Go Back", "next": "greeting_en" }]
@@ -105,18 +105,18 @@
         "images": [
           {
             "src": "https://imbinodsubedi-commits.github.io/chatbot/himalayan1.png",
-            "caption": "१ किलो – ९ एमएम स्ट्रेट कट (मूल्य रु ३५०)"
+            "caption": "१ किलो – ९ एमएम स्ट्रेट कट (मूल्य रु ३८५)"
           },
           {
             "src": "https://imbinodsubedi-commits.github.io/chatbot/himalayan2.png",
-            "caption": "२.५ किलो – ९ एमएम स्ट्रेट कट (मूल्य रु ७८०)"
+            "caption": "२.५ किलो – ९ एमएम स्ट्रेट कट (मूल्य रु ८८०)"
           },
           {
             "src": "https://imbinodsubedi-commits.github.io/chatbot/himalayan6.png",
-            "caption": "२.५ किलो – ६ एमएम स्ट्रेट कट (मूल्य रु ८५०)"
+            "caption": "२.५ किलो – ६ एमएम स्ट्रेट कट (मूल्य रु १०००)"
           }
         ],
-        "price": "मूल्य: १ किलो – रु ३५० | २.५ किलो (९ एमएम) – रु ७८० | २.५ किलो (६ एमएम) – रु ८५०"
+        "price": "मूल्य: १ किलो – रु ३८५ | २.५ किलो (९ एमएम) – रु ८८० | २.५ किलो (६ एमएम) – रु १०००"
       },
       {
         "title": "🍟 Hamro Fries",
@@ -124,14 +124,14 @@
         "images": [
           {
             "src": "https://imbinodsubedi-commits.github.io/chatbot/hamro1.png",
-            "caption": "१ किलो प्याक (मूल्य रु ३००)"
+            "caption": "१ किलो प्याक (मूल्य रु ३५०)"
           },
           {
             "src": "https://imbinodsubedi-commits.github.io/chatbot/hamro2.png",
-            "caption": "२.५ किलो प्याक (मूल्य रु ६८०)"
+            "caption": "२.५ किलो प्याक (मूल्य रु ७८०)"
           }
         ],
-        "price": "मूल्य: १ किलो – रु ३०० | २.५ किलो – रु ६८०"
+        "price": "मूल्य: १ किलो – रु ३५० | २.५ किलो – रु ७८०"
       }
     ],
     "options": [{ "label": "⬅ फर्कनुहोस्", "next": "greeting_np" }]
